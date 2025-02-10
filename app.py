@@ -10,7 +10,7 @@ app= Flask(__name__)
 
 @app.route("/")
 def home():
-    return str(os.getcwd())+'La pagina esta funcionando bien'
+    return 'La pagina esta funcionando bien'
 
 @app.route("/predecir", methods=["POST"])
 def predecir():
